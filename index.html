@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成卡片</title>
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+<link rel="icon" type="image/svg+xml" sizes="144x144" href="img/icon.svg">
+<link rel="apple-touch-icon" type="image/svg+xml" href="img/icon.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+        }
+        .login-wrapper {
+            background-color: #fff;
+            width: 450px;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%);
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128, 125, 125);
+            font-size: 15px;
+            outline: none;
+        }
+        .input-item:placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+            color: #fff;
+            border: #FFFFFF;
+            border-radius: 15px
+        ;
+        }
+        .msg {
+            text-align: center;
+            line-height: 88px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #abc1ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">信息填写</div>
+            <div class="form-wrapper">
+                <form action="welcome.php" method="post">
+                <input type="text" name="title" placeholder="网页标题(可以不填写)" class="input-item">
+                <input type="text" name="tab-1" placeholder="标题名言(可以不填写)" class="input-item">
+                <input type="text" name="tab-2" placeholder="图片下的名言(可以不填写)" class="input-item">
+                <input type="text" name="fname-1" placeholder="第一行标题" class="input-item">
+                <input type="text" name="eell-1" placeholder="第一行内容" class="input-item">
+                <input type="text" name="fname-2" placeholder="第二行标题" class="input-item">
+                <input type="text" name="eell-2" placeholder="第二行内容" class="input-item">
+                <input type="text" name="fname-3" placeholder="第三行标题" class="input-item">
+                <input type="text" name="eell-3" placeholder="第三行内容" class="input-item">
+                <input type="text" name="fname-4" placeholder="第四行标题" class="input-item">
+                <input type="text" name="eell-4" placeholder="第四行内容" class="input-item">
+                <input type="text" name="fname-5" placeholder="第五行标题" class="input-item">
+                <input type="text" name="eell-5" placeholder="第五行内容" class="input-item">
+                <input type="text" name="fname-6" placeholder="第六行标题" class="input-item">
+                <input type="text" name="eell-6" placeholder="第六行内容" class="input-item">
+                <input type="text" name="fname-7" placeholder="第七行标题" class="input-item">
+                <input type="text" name="eell-7" placeholder="第七行内容" class="input-item">
+                <input type="text" name="eell-8" placeholder="图片外链(建议填写)" class="input-item">
+                <input type="text" name="eell-9" placeholder="名字(建议填写)" class="input-item">
+                <input class="btn" type="submit" value="生成卡片">
+                <p>&nbsp;</p>
+                </form>
+               </div>
+            </div>
+            <div class="msg">
+                <p>&nbsp;</p>
+                    <div style="color: rgba(0,0,0,.25);">Copyright © 2022 eell的卡片 - 测试页面</div>
+            </div>
+        </div>
+    </div>
+     <div class="progress-wrap">
+</body>
+</html>
